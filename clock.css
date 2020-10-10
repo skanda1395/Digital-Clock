@@ -1,0 +1,81 @@
+@font-face {
+  font-family: rulerStencilThin;
+  src: url(./stenciles/Stenciles.ttf);
+}
+
+body {
+  background: #addae6;
+  display: grid;
+  place-items: center;
+  height: 91vh;
+  font-family: rulerStencilThin, sans-serif;
+}
+
+.container {
+  width: 750px;
+  height: 300px;
+  background: white;
+  padding: 30px 50px;
+  box-shadow: 20px 20px 50px lightslategray;  
+  position: relative;
+}
+
+.time-container {
+  background: black;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr 20px 1fr;  
+  align-items: center;
+}
+
+.container, .time-container {
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+
+.time-container p {
+  color: #F31431;
+  text-align: center;
+  font-size: 7em;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.seperator {
+  position: relative;
+  top: -17px;
+  left: -11px;
+}
+
+/* .hide {
+  visibility: hidden;
+} */
+
+#timer-top {
+  background: #34495E;
+  height: 17px;
+  border-radius: 25px 25px 0 0;
+  width: 50%;
+  position: absolute;
+  left: 187px;
+  top: -17px;
+}
+
+.timer-bottom {
+  background: #34495E;
+  height: 32px;
+  border-radius: 0 0 25px 25px;
+  width: 10%;
+  position: absolute;
+}
+
+.left {
+  left: 61px;
+  bottom: -32px;
+}
+
+.right {
+  right: 61px;
+  bottom: -32px;
+}
