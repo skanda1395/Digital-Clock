@@ -1,7 +1,8 @@
 let timeSlot = document.getElementById("time");
 let toggleFormatBtn = document.getElementById("toggleFormat");
 
-let inMilitaryStyle = true;
+let inMilitaryStyle = false;
+let timeStyles =  ["In Military Format", "In Normal Format"];
 let formattedTimeOptions = { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true};
 
 function setTime() {
@@ -15,7 +16,7 @@ function setTime() {
 
 function toggleFormat() {
   inMilitaryStyle = !inMilitaryStyle;
-  toggleFormatBtn.textContent = inMilitaryStyle? "In Normal Format": "In Military Format";
+  toggleFormatBtn.textContent = timeStyles[+inMilitaryStyle];
   setTime();
 }
 

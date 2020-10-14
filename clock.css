@@ -24,8 +24,7 @@ body {
   background: black;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 20px 1fr 20px 1fr;  
-  align-items: center;
+  place-items: center;
 }
 
 .container, .time-container {
@@ -35,22 +34,9 @@ body {
 
 .time-container p {
   color: #F31431;
-  text-align: center;
-  font-size: 7em;
+  font-size: 6em;
   margin: 0;
-  display: grid;
-  place-items: center;
 }
-
-.seperator {
-  position: relative;
-  top: -17px;
-  left: -11px;
-}
-
-/* .hide {
-  visibility: hidden;
-} */
 
 #timer-top {
   background: #34495E;
@@ -78,4 +64,13 @@ body {
 .right {
   right: 61px;
   bottom: -32px;
+}
+
+#toggleFormat {
+  position: absolute;
+  right: 50px; 
+  font-size: 1.2em;
+  padding: 12px 10px;
+  background: white;
+  color: #34495E;
 }

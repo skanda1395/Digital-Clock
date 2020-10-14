@@ -5,19 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- development version, includes helpful console warnings -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <title>Digital Clock</title>
+  <title>Digital Clock | v-2</title>
 </head>
 <body>
-  
+
   <div id="app">
-    
-    <div class="time">
-      {{ Hour }}:{{ minutes }}:{{ seconds }} {{ period }}
-    </div>
+    <p>Time: {{ FormattedTime }} {{ period }}</p>
 
     <button @click="toggleFormat">{{ displayFormat }}</button>
   </div>
 
-  <script src="app.js"></script>
+  <script src="clock_3.js"></script>
 </body>
 </html>
